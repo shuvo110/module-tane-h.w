@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:50px 150px 30px 100px;
+    background-color: cornflowerblue;
+}
+nav h3{
+    font-size:30px;
+    font-family: "Open Sans";
+
+}
+nav  .link a{
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 20px;
+    color: whitesmoke;
+}
+
+/* heder section code start */
+header{
+    padding: 30px 120px;
+    background-color: rgba(255, 0, 0, 0);
+}
+.text-img{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.text-img .text{
+    width: 400px;
+}
+.text-img .text h2{
+    font-size:40px;
+    font-weight: 900;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.text-img .text p{
+    margin: 20px  0px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.911);
+}
+.text-img .text  .primari{
+    display:block;
+    padding:10px 22px;
+    margin-top:50px;
+    font-size: 19px;
+    border: none;
+    border-radius: 15px;
+    background-color: coral;
+}
+
+.text-img .img-div img{
+    background-image:url(images/Circle\ design.svg);
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px dotted whitesmoke ;
+    border-radius: 50%;
+    padding: 20px;
+    width: 100%;
+}
+
+
+/* Main section code start */
+
+/* 1st code section code start  */
+.img-all{
+    width: 80%;
+    margin: 40px auto;
+    border-top: 1px dotted #0000009a;
+    border-bottom: 1px dotted #0000009a;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+
+/* 2nd section code start  */
+.text-header{
+    margin: 100px 0px 20px 0px;
+    text-align: center;
+    font-size: 30px;
+    padding: 30px 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ 
+}
+.card{
+    max-width: 80%;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-gap: 50px 40px;
+    padding: 50px 0px;
+}
+.card .design img{
+    width: 100%;
+}
+.card .design{
+    padding: 10px 8px 23px 10px;
+    box-shadow: 6px 6px 10px black;
+}
+.card .design h2{
+    margin:8px 0px;
+    font-size:30px;
+}
+.card .design h3{
+    font-size: 25px;
+    font-weight: 300;
+    margin: 10px 0px;
+}
+.card .design .tara{
+    display: block;
+    margin: 10px 0px;
+    color: chocolate; 
+
+}
+.card .design  .namber{
+    color: black;
+    margin-left:10px;
+}
+.card .design p{
+    color: rgba(0, 0, 0, 0.651);
+}
+.card .see{
+    position: relative;
+}
+.card a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 30px;
+    /* border: 2px solid; */
+    position: relative;
+    top: 0px;
+    left:280%;
+}
+
+.card .see  i{
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    left: 322%;
+}
+
+
+
+
+/* phone Responsive  */
+@media screen and (max-width:576px){
+    nav{
+        flex-direction: column;
+    }
+    .text-img{
+        display: block;
+    }
+    .text-img .text{
+        width:100%;
+    }
+    header{
+        padding:10px;
+    }
+    .text-img .img-div img{
+
+        margin: 40px auto;
+        width:80%;
+    }
+    nav  .link a{
+        display:block;
+        margin-top: 30px;
+    }
+
+    /* 1st section code */
+    .img-all{
+        width:80%;
+        margin: 40px auto;
+        display: block;
+       
+    }
+
+    /* 2nd section code  */
+    .card{
+        grid-template-columns:repeat(1,1fr);
+      
+    }
+    .card a{
+
+        top: 0px;
+        left:0%;
+    }
+    
+    .card .see  i{
+        top:10px;
+        left:40%;
+    }
+}
+
+
+
+
+@media screen and (min-width:576px) and (max-width:770px){
+    .text-img{
+        display: block;
+    }
+    .text-img .text{
+        width:80%;
+    }
+    header{
+        padding:10px;
+    }
+    .text-img .img-div img{
+        margin: 40px auto;
+        width:50%;
+    }
+    nav  .link a{
+        display:block;
+        margin-top: 30px;
+    }
+
+    /* 1st section code */
+    .img-all{
+        width:70%;
+        margin: 40px auto;
+        display: block;
+       
+    }
+        /* 2nd section code  */
+    .card{
+        grid-template-columns:repeat(2,1fr);
+          
+    }
+    .card a{
+
+        top: 0px;
+        left:0%;
+    }
+    
+    .card .see  i{
+        top:10px;
+        left:45%;
+    }
+}
+
