@@ -16,11 +16,26 @@ nav h3{
     font-family: "Open Sans";
 
 }
+nav .header-text{
+    color: crimson;
+    text-shadow: 3px 4px 2px #000000;
+}
 nav  .link a{
     font-size: 20px;
     text-decoration: none;
     margin-left: 20px;
     color: whitesmoke;
+}
+nav  .link a:nth-child(4){
+    background-color: coral;
+    color: #000000;
+    padding:5px 10px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+nav  .link a:nth-child(4):hover{
+    background-color: black;
+    color: white;
 }
 
 /* heder section code start */
@@ -139,8 +154,90 @@ header{
     font-size: 30px;
     position: relative;
     top: 0px;
-    left:250%;
+    left:280%;
 }
+
+
+/* 3rd section code start */
+.img-tex{
+    display: flex;
+    max-width: 90%;
+    margin:80px auto;
+    align-items: center;
+    justify-content: space-between;
+    background-color: antiquewhite;
+    border-radius: 9px;
+}
+.img-tex .img img{
+    width: 100%;
+    vertical-align: middle;
+}
+.img-tex .text{
+    max-width: 70%;
+    margin-right:30px;
+}
+.img-tex .text h2{
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.img-tex .text p{
+    color: rgba(0, 0, 0, 0.555);
+    line-height:1.6rem;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+}
+.img-tex .text .primari{
+    display: block;
+    margin: 20px 0px;
+    padding: 10px 20px;
+    font-size:18px;
+    background-color: cyan;
+    border: none;
+    border-radius: 10px;
+    transition: 0.8s;
+}
+.img-tex .text .primari:hover{
+    background-color: red;
+}
+
+
+/* footer section code start */
+footer{
+    background-color: black;
+    padding:90px 0px;
+}
+.text-icon{
+    padding: 20px 0px;
+    color: white;
+    text-align: center;
+    width: 70%;
+    border-top: 2px dotted #ffffff57;
+    border-bottom: 2px dotted #ffffff57;
+    margin: 0px auto;
+}
+.text-icon h2{
+    margin: 10px 0px;
+    font-size: 30px;
+    font-family:Franklin Gothic Medium;
+    font-style: italic;
+}
+.text-icon  p{
+    margin: 10px ;
+    text-shadow: 1px 1px 1px red;
+}
+.text-icon a{
+    display: inline-block;
+    margin:10px 10px;
+    font-size:25px;
+    padding:5px 7px;
+    border-radius: 50%;
+    border: 1px solid whitesmoke;
+}
+
+
 
 
 
@@ -190,6 +287,20 @@ header{
     .card .see  i{
         top:10px;
         left:40%;
+    }
+
+
+    /* 3rd section code start */
+    .img-tex{
+        flex-direction: column;
+    }
+/* 
+    .img-tex .text{
+        max-width:80%;
+    } */
+    .img-tex .text h2{
+        margin: 40px 0px;
+        font-size: 35px;
     }
 }
 
